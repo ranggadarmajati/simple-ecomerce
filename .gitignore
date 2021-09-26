@@ -5,6 +5,8 @@
 /vendor
 /.idea
 /.vagrant
+public/fashe-colorlib/images/product
+public/fashe-colorlib/images/proof_of_payment
 Homestead.json
 Homestead.yaml
 npm-debug.log
