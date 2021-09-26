@@ -90,7 +90,7 @@ Konfirmasi Pembayaran
 					<td colspan="3">Setelah Anda Transfer, silahkan isi field dibawah ini dengan benar</td>
 				</tr>
 			</table>
-					{!! Form::open(['route' => 'store_payment', 'class' => 'store_payment', 'id' => 'store_payment' ]) !!}
+					{!! Form::open(['route' => 'store_payment', 'class' => 'store_payment', 'id' => 'store_payment', 'entype' => 'multipart/form-data' ]) !!}
 					<table class="table" style="font-size: 12.5px">
 							<tr>
 								<td align="right">Nomor rekening anda</td>
