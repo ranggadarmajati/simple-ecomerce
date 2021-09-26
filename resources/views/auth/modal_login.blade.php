@@ -7,12 +7,12 @@
                  <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
              </div>
              <div class="modal-body">
-                 {!! Form::open(['route' => 'auth.login', 'class' => 'login100-form validate-form', 'id' => 'formlogin']) !!}
+                 {!! Form::open(['route' => 'auth.login', 'class' => 'login100-form validate-form', 'id' => 'formlogin', 'autocomplete' => 'off']) !!}
 
                  <div class="form-group">
                      <label class="col-md-4 control-label">Email</label>
                      <div class="col-md-12">
-                         <input type="email" class="form-control" id="email" name="email" value="{{old('email_forgot')}}" placeholder="Masukan Email" style="background-color: #F0FFFF;">
+                         <input type="email" autocomplete="off" class="form-control" id="email" name="email" value="{{old('email_forgot')}}" placeholder="Masukan Email" style="background-color: #F0FFFF;">
                          @if(Session::has('email_not_found'))
                          <p class="help-block error-help-block"><em> {!! session('email_not_found') !!} </em></p>
                          @endif
@@ -21,7 +21,7 @@
                  <div class="form-group">
                      <label class="col-md-4 control-label">Password</label>
                      <div class="col-md-12">
-                         <input type="password" class="form-control" id="password" name="password" value="{{old('password')}}" placeholder="Masukan Password" style="background-color: #F0FFFF;">
+                         <input type="password" autocomplete="new-password" class="form-control" id="password" name="password" value="{{old('password')}}" placeholder="Masukan Password" style="background-color: #F0FFFF;">
                      </div>
                  </div>
                  <div class="form-group">
@@ -35,7 +35,7 @@
                  </div>
                  <div class="form-group">
                      <div class="col-md-4 col-md-offset-4">
-                         <button type="submit" class="flex-c-m sizefull bg1 bo-rad-23 hov1 s-text1 trans-0-4" id="button-reg">
+                         <button type="submit" class="flex-c-m sizefull bg1 bo-rad-23 hov1 s-text1 trans-0-4" id="button-login">
                              Log-In
                          </button>
                      </div>
