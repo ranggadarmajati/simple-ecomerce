@@ -64,8 +64,6 @@ gmap_apikey=your_key
 ```bash
 php artisan migrate
 php artisan db:seed
-php artisan vendor:publish
-php artisan route:list
 ```
 
 #### Publish vendor & check url route of application:
